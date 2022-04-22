@@ -1,0 +1,44 @@
+abstract class Employee  
+{
+abstract void details();
+}
+class Account extends Employee
+{
+double id;
+long jd;
+long mn;
+String name,eid,bname;
+private int acno;
+private  int pin;
+void details()
+{
+acno=25;
+name="naveen";
+bal=23.65f;
+pin=3216;
+bname="HDFC";
+id=3256d;
+mn=96587423;
+eid="naveen123@gmail.com";
+
+System.out.println("-------------");
+System.out.println("Employee Details");
+System.out.println("---------------");
+System.out.println("Account Numer="+acno);
+System.out.println("Account Holder Name="+name);
+System.out.println("Account Balance="+bal);
+System.out.println("Password="+pin);
+System.out.println("Branch Name="+bname);
+System.out.println("Identity Number="+id);
+System.out.println("Mobile Number="+mn);
+System.out.println("Email id="+eid);
+}
+}
+class EmployeeDemo
+{
+punlic static void main(String [] args)
+{
+Employee ee=new Account();
+ee.details();
+}
+}
